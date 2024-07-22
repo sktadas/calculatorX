@@ -1,0 +1,103 @@
+:root {
+    --dark1: #131314;
+    --dark2: #1e1f20;
+    --light: #e3e3e3;
+    --colora: #ff66f7;
+    --colora2: #537fe7;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--dark2);
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    color: var(--light);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+button:hover {
+    cursor: pointer;
+    filter: brightness(150%)
+  }
+
+h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.fancy-text {
+    background: linear-gradient(45deg, var(--colora) 0%, var(--colora2) 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+h2 {
+    font-family: 'Calculator', Montserrat, sans-serif;
+    font-size: 100px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+button {
+    border: none;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    width: 200px;
+    border-radius: 5px;
+}
+
+#increment-btn {
+    background: var(--dark2);
+}
+
+#save-btn {
+    background: var(--dark2);
+}
+
+#reset-btn {
+    background: var(--dark2);
+    width: 75px;
+    height: calc(2 * 40px - 5px);
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons {
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+    padding-bottom: 10px;
+}
+
+.main-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.inner-background {
+    background-color: var(--dark1);
+    border: 1px solid rgba(227, 227, 227, 0.2);
+    max-width: 350px;
+    padding: 50px;
+    margin-top: -300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.fa-undo { 
+  font-size: 2em;
+}
